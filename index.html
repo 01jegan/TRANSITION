@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> transition</title>
+</head>
+<style>
+	.container{
+    margin: 0 200px;
+    padding: 30px;
+    background:#ccc;
+}
+      h1{
+	  background-color:#ff000059;
+	  color:#ffff0096;
+	  text-align:center;
+	  }
+	   h2{
+	  color:#e91e63b5;
+	  }
+      .colo{
+	  width:100px;
+	  height:100px;
+	   background:#1e88e594;
+	   color:#fff;
+	   text-align:center;
+         transition: width 2s;
+	  }
+	  .colo:hover{
+	     width: 300px;
+	  }
+	   .mit{
+	  width:100px;
+	  height:100px;
+	   background: #1e88e594;
+	   color:#fff;
+	   text-align:center;
+         transition-duration: 5s;
+       transition-delay: 2s;
+	  }
+	  .mit:hover{
+	     width: 300px;
+	  }
+	   .open{
+	  width:100px;
+	  height:100px;
+	   background: #1e88e594;
+	   color:#fff;
+	   text-align:center;
+         transition-duration: 5s;
+	  }
+	  .open:hover{
+	     width: 300px;
+	  }
+	  .close{
+	  width:100px;
+	  height:100px;
+	   background: #1e88e594;
+	   color:#fff;
+	   text-align:center;
+        transition-property: width;
+         transition-duration: 2s;
+	  }
+	  .close:hover{
+	     width: 300px;
+	  }
+	  .trans1{
+	   width:100px;
+	  height:100px;
+	   background: #1e88e594;
+	   color:#fff;
+	transition:width 10s;
+	  }
+	  .trans1:hover{
+	     width: 300px;
+	  }
+	    #h {
+		transition-timing-function: linear;
+		}
+		#he {
+		transition-timing-function: ease;
+		
+		#hel {
+		transition-timing-function: ease-in;
+		}
+		#hell {
+		transition-timing-function: ease-out;
+		}
+		#hello {
+		transition-timing-function: ease-in-out;
+		}
+
+</style>
+<body>
+<section class="container">
+       <h1> TRANSITION</h1>
+	  <div>
+		<div>
+			<h2> transition </h2>
+			  <div class="colo"> JEGAN </div>
+			  
+			 <h2>Delay </h2>
+			  <div class="mit"> JEGAN </div>
+			  
+			 <h2>Duration </h2>
+			  <div class="open"> JEGAN </div>
+			 
+		</div>
+		
+		<div>
+           <h2>timing </h2>
+			<div  class="trans1" id="h"> linear </div><br>
+			<div  class="trans1" id="he"> ease </div><br>
+			<div  class="trans1" id="hel"> ease in </div><br>
+			<div  class="trans1" id="hell"> ease out </div><br>
+			<div  class="trans1" id="hello"> esae-in-out </div>
+		</div>
+	 </div>
+</section>
+</body>
+
+</html>
